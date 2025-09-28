@@ -1,0 +1,16 @@
+<div class="profile-card">
+  <img src="assets/img/eu.png" alt="Profile Picture" class="profile-picture">
+  
+  <div class="profile-info">
+    <h1>{{user.name}}</h1>
+    <p class="location">{{user.location.city}}, {{user.location.country}}</p>
+  </div>
+  
+  <p class="bio">Desenvolvedor web com foco em Backend Node.js. e Java. Em avanço em desenvolvimento Front-end</p>
+  
+  <div class="social-links">
+    @for (item of profiles; track $index) {
+      <a [href]="item.profileUrl" class="social-button" target="_blank">{{item.profileName}}</a>
+    }
+  </div>
+</div>

@@ -1,0 +1,25 @@
+:host{
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        border-radius:5%;
+        width: 600px;
+        height: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+
+    @media (max-width: 800px) {
+        main{
+            width: 60%;
+            height: 90%;
+            border-radius: 0;
+            border: none;
+            margin-top: 10px;
+        }
+
+    }
+}
